@@ -1,16 +1,19 @@
 #!/bin/bash
 
 # Name: clitter v0.2
-# Authors: Night <nightcooki3[at]gmail[dot]com>, onemyndseye
+# Author: Night <nightcooki3[at]gmail[dot]com>
+# Contributor(s): onemyndseye
 # License: GPL v2+
 # Description: A bash script for Twitter that utilizes cURL
-# Dependencies: cURL
+# Dependencies: dialog, cURL
 
 # To-do:
-# gui & cli version
+# * gui interface
 
 # History of cli-twitter
 # v0.2 (not complete yet)
+# * Added log formatting
+# * Added sessions
 # * Added wget support for people that don't
 #   have cURL on their system
 # * Added a nicer log output so it's easier
