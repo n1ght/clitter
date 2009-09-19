@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Name: clitter v0.2
-# Author: Night <nightcooki3[at]gmail[dot]com>
+# Authors: Night <nightcooki3[at]gmail[dot]com>, onemyndseye
 # License: GPL v2+
 # Description: A bash script for Twitter that utilizes cURL
 # Dependencies: cURL
