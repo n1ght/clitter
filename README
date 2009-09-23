@@ -17,7 +17,9 @@ v1.0 (24/09/2009)
   have zenity on your system, otherwise
   the script will crash!
 * Put the functions in a separate file for
-  easier editing. File is functions.bash
+  easier editing. File is functions.bash.
+  Remember that you *NEED* this file and 
+  that clitter will not work without it.
 
 v0.2 (19/09/2009)
 * Added log formatting
