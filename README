@@ -3,13 +3,23 @@ Author: Night <nightcooki3[at]gmail[dot]com>
 Contributor(s): onemyndseye
 License: GPL v2+
 Description: A bash script for Twitter that utilizes cURL
-Dependencies: dialog, cURL
+Dependencies: curl, dialog, zenity
 
 To-do:
-* gui interface
+* Tweet length check
 
 History of cli-twitter
-v0.2 (not complete yet)
+v1.0 (24/09/2009)
+* Added option for starting a gui version
+  of clitter. Run it by writing in your
+  terminal './clitter -g'. 
+  *** NOTE *** For this to work you MUST
+  have zenity on your system, otherwise
+  the script will crash!
+* Put the functions in a separate file for
+  easier editing. File is functions.bash
+
+v0.2 (19/09/2009)
 * Added log formatting
 * Added sessions
 * Added wget support for people that don't
