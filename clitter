@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# Name: clitter v0.2
+# Author: Night <nightcooki3[at]gmail[dot]com>
+# Contributor(s): onemyndseye
+# License: GPL v2+
+# Description: A bash script for Twitter that utilizes cURL
+# Dependencies: curl, dialog, zenity
+
+# Debug
+#set -x
+
+# Source for functions
+source functions.bash
+
+# Script startup
+
+# Check for command line arguments
+while getopts "g" opt; do
+  case "$opt" in
+
+  # Only available argument for now, -g (gui)
+  # Make sure you have zenity on your system
+  # or the script will crash (cba to write a 
+  # zenity check atm).
+  g)
+    printf "Using zenity instead of dialog...\n\n" >&2
+    sleep 1
+    dep_check
+    core_zen
+    goodbye_zen
+    exit
+    ;;
+
+  # Invalid option > proceed as cli
+  \?)
+    printf "Invalid option: -$OPTARG.\n\n"
+    sleep 1
+    printf "Starting as cli...\n\n" >&2
+    sleep 1
+    ;;
+  esac
+done
+
+# No option > proceed as cli
+dep_check
+
+# Load the core
+core_cli
+
+# Say goodbye
+goodbye_cli
+exit 0
