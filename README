@@ -7,17 +7,18 @@ Dependencies: curl, dialog, zenity
 
 To-do:
 * Tweet length check
+* Multi-user support
 
 History of cli-twitter
 v1.0 (24/09/2009)
 * Added option for starting a gui version
-  of clitter. Run it by writing in your
-  terminal './clitter -g'. 
+  of clitter. Run it by writing './clitter -g'
+  in your terminal. 
   *** NOTE *** For this to work you MUST
   have zenity on your system, otherwise
   the script will crash!
 * Put the functions in a separate file for
-  easier editing. File is functions.bash.
+  easier editing. File is clitfn.bash.
   Remember that you *NEED* this file and 
   that clitter will not work without it.
 
